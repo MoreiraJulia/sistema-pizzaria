@@ -76,7 +76,7 @@
                                     <option value="calabresa">CALABRESA</option>
                                     <option value="frango">FRANGO</option>
                                     <option value="quatro queijos">QUATRO QUEIJOS</option>
-                                    <option value="AMERICANA">AMERICANA</option>
+                                    <option value="americana">AMERICANA</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
@@ -132,9 +132,9 @@
         <table class="table text-center">
             <thead class="table-success">
                 <tr class="row justify-content-center">
-                    <th class="col-1">NOME</th>
+                    <th class="col-2">NOME</th>
                     <th class="col-2">ENDEREÇO</th>
-                    <th class="col-2">CIDADE</th>
+                    <th class="col-1">CIDADE</th>
                     <th class="col-1">ESTADO</th>
                     <th class="col-1">TAMANHO</th>
                     <th class="col-1">SABOR</th>
@@ -156,9 +156,9 @@
 
                 foreach($cadastroPedido as $pedido): ?>
                     <tr class="row justify-content-center table-light">
-                        <td class="col-1"><?php echo $pedido['nome']; ?></td>
+                        <td class="col-2"><?php echo $pedido['nome']; ?></td>
                         <td class="col-2"><?php echo $pedido['endereco']; ?></td>
-                        <td class="col-2"><?php echo $pedido['cidade']; ?></td>
+                        <td class="col-1"><?php echo $pedido['cidade']; ?></td>
                         <td class="col-1"><?php echo $pedido['estado']; ?></td>
                         <td class="col-1"><?php echo $pedido['tamanho_pizza']; ?></td>
                         <td class="col-1"><?php echo $pedido['sabor_pizza']; ?></td>
