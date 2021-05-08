@@ -52,55 +52,55 @@
             </fieldset>
 
             
-                <fieldset>
-                    <legend class="mt-5 text-white">PIZZA</legend>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="form-label text-white" for="tamanhos">TAMANHO</label><br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="tamanho_pizza" id="inlineRadio1" value="P" style="border: none">
-                                    <label class="form-check-label text-white" for="tamanho">P</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="tamanho_pizza" id="inlineRadio1" value="M" style="border: none">
-                                    <label class="form-check-label text-white" for="tamanho">M</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="tamanho_pizza" id="inlineRadio1" value="G" style="border: none">
-                                    <label class="form-check-label text-white" for="tamanho">G</label>
-                                </div>
-                            </div>    
-                            <div class="col-md-3">
-                                <label for="sabor" class="form-label text-white">SABOR</label>
-                                <select class="form-select" aria-label="Default select example" name="sabor_pizza">
-                                    <option value="calabresa">CALABRESA</option>
-                                    <option value="frango">FRANGO</option>
-                                    <option value="quatro queijos">QUATRO QUEIJOS</option>
-                                    <option value="americana">AMERICANA</option>
-                                </select>
+            <fieldset>
+                <legend class="mt-5 text-white">PIZZA</legend>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label class="form-label text-white" for="tamanhos">TAMANHO</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tamanho_pizza" id="inlineRadio1" value="P" style="border: none">
+                                <label class="form-check-label text-white" for="tamanho">P</label>
                             </div>
-                            <div class="col-md-4">
-                                <label for="borda" class="form-label text-white">Borda</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="borda_pizza" id="exampleRadios1" value="normal" style="border: none">
-                                    <label class="form-check-label text-white" for="exampleRadios1">
-                                        NORMAL
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="borda_pizza" id="exampleRadios2" value="catupiry" style="border: none">
-                                    <label class="form-check-label text-white" for="exampleRadios2">
-                                        CATUPIRY
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="borda_pizza" id="exampleRadios3" value="cheddar" style="border: none">
-                                    <label class="form-check-label text-white" for="exampleRadios3">
-                                        CHEDDAR
-                                    </label>
-                                </div>
-                            </div>                         
-                        </div> 
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tamanho_pizza" id="inlineRadio1" value="M" style="border: none">
+                                <label class="form-check-label text-white" for="tamanho">M</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tamanho_pizza" id="inlineRadio1" value="G" style="border: none">
+                                <label class="form-check-label text-white" for="tamanho">G</label>
+                            </div>
+                        </div>    
+                        <div class="col-md-3">
+                            <label for="sabor" class="form-label text-white">SABOR</label>
+                            <select class="form-select" aria-label="Default select example" name="sabor_pizza">
+                                <option value="calabresa">CALABRESA</option>
+                                <option value="frango">FRANGO</option>
+                                <option value="quatro queijos">QUATRO QUEIJOS</option>
+                                <option value="americana">AMERICANA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="borda" class="form-label text-white">Borda</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="borda_pizza" id="exampleRadios1" value="normal" style="border: none">
+                                <label class="form-check-label text-white" for="exampleRadios1">
+                                    NORMAL
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="borda_pizza" id="exampleRadios2" value="catupiry" style="border: none">
+                                <label class="form-check-label text-white" for="exampleRadios2">
+                                    CATUPIRY
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="borda_pizza" id="exampleRadios3" value="cheddar" style="border: none">
+                                <label class="form-check-label text-white" for="exampleRadios3">
+                                    CHEDDAR
+                                </label>
+                            </div>
+                        </div>                         
+                    </div> 
                 </fieldset>
 
                 <fieldset>
@@ -128,50 +128,48 @@
                 </div>
         </form>
         
-        <div class="mt-5 ">
-        <table class="table text-center">
-            <thead class="table-success">
-                <tr class="row justify-content-center">
-                    <th class="col-2">NOME</th>
-                    <th class="col-2">ENDEREÇO</th>
-                    <th class="col-1">CIDADE</th>
-                    <th class="col-1">ESTADO</th>
-                    <th class="col-1">TAMANHO</th>
-                    <th class="col-1">SABOR</th>
-                    <th class="col-1">BORDA</th>
-                    <th class="col-2">FORMA DE PAGAMENTO</th>
-                    <th class="col-1">TROCO</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php 
-                $sqlBusca = "SELECT * FROM tbl_pedidos";
-                $resultado = mysqli_query($conexao , $sqlBusca);
-
-                $cadastroPedido = [];
-
-                while($pedido= mysqli_fetch_assoc($resultado)){
-                    $cadastroPedido[] = $pedido;
-                }
-
-                foreach($cadastroPedido as $pedido): ?>
-                    <tr class="row justify-content-center table-light">
-                        <td class="col-2"><?php echo $pedido['nome']; ?></td>
-                        <td class="col-2"><?php echo $pedido['endereco']; ?></td>
-                        <td class="col-1"><?php echo $pedido['cidade']; ?></td>
-                        <td class="col-1"><?php echo $pedido['estado']; ?></td>
-                        <td class="col-1"><?php echo $pedido['tamanho_pizza']; ?></td>
-                        <td class="col-1"><?php echo $pedido['sabor_pizza']; ?></td>
-                        <td class="col-1"><?php echo $pedido['borda_pizza']; ?></td>
-                        <td class="col-2"><?php echo $pedido['forma_pagamento']; ?></td>
-                        <td class="col-1"><?php echo $pedido['troco']; ?></td>
+        <div class="mt-5">
+            <table class="table text-center">
+                <thead class="table-success">
+                    <tr class="row justify-content-center">
+                        <th class="col-2">NOME</th>
+                        <th class="col-2">ENDEREÇO</th>
+                        <th class="col-1">CIDADE</th>
+                        <th class="col-1">ESTADO</th>
+                        <th class="col-1">TAMANHO</th>
+                        <th class="col-1">SABOR</th>
+                        <th class="col-1">BORDA</th>
+                        <th class="col-2">FORMA DE PAGAMENTO</th>
+                        <th class="col-1">TROCO</th>
                     </tr>
-                <?php endforeach; ?>
+                </thead>
+                <tbody>
+                    <?php 
+                    $sqlBusca = "SELECT * FROM tbl_pedidos";
+                    $resultado = mysqli_query($conexao , $sqlBusca);
 
-            </tbody>
-        </table>
-    </div>
+                    $cadastroPedido = [];
 
+                    while($pedido= mysqli_fetch_assoc($resultado)){
+                        $cadastroPedido[] = $pedido;
+                    }
+
+                    foreach($cadastroPedido as $pedido): ?>
+                        <tr class="row justify-content-center table-light">
+                            <td class="col-2"><?php echo $pedido['nome']; ?></td>
+                            <td class="col-2"><?php echo $pedido['endereco']; ?></td>
+                            <td class="col-1"><?php echo $pedido['cidade']; ?></td>
+                            <td class="col-1"><?php echo $pedido['estado']; ?></td>
+                            <td class="col-1"><?php echo $pedido['tamanho_pizza']; ?></td>
+                            <td class="col-1"><?php echo $pedido['sabor_pizza']; ?></td>
+                            <td class="col-1"><?php echo $pedido['borda_pizza']; ?></td>
+                            <td class="col-2"><?php echo $pedido['forma_pagamento']; ?></td>
+                            <td class="col-1"><?php echo $pedido['troco']; ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
 
     </main>
     
