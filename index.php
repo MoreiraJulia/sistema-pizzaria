@@ -132,14 +132,14 @@
         <table class="table text-center">
             <thead class="table-success">
                 <tr class="row justify-content-center">
-                    <th class="col-2">NOME</th>
+                    <th class="col-1">NOME</th>
                     <th class="col-2">ENDEREÇO</th>
                     <th class="col-2">CIDADE</th>
                     <th class="col-1">ESTADO</th>
                     <th class="col-1">TAMANHO</th>
                     <th class="col-1">SABOR</th>
                     <th class="col-1">BORDA</th>
-                    <th class="col-1">FORMA DE PAGAMENTO</th>
+                    <th class="col-2">FORMA DE PAGAMENTO</th>
                     <th class="col-1">TROCO</th>
                 </tr>
             </thead>
@@ -156,14 +156,14 @@
 
                 foreach($cadastroPedido as $pedido): ?>
                     <tr class="row justify-content-center table-light">
-                        <td class="col-2"><?php echo $pedido['nome']; ?></td>
+                        <td class="col-1"><?php echo $pedido['nome']; ?></td>
                         <td class="col-2"><?php echo $pedido['endereco']; ?></td>
                         <td class="col-2"><?php echo $pedido['cidade']; ?></td>
                         <td class="col-1"><?php echo $pedido['estado']; ?></td>
                         <td class="col-1"><?php echo $pedido['tamanho_pizza']; ?></td>
                         <td class="col-1"><?php echo $pedido['sabor_pizza']; ?></td>
                         <td class="col-1"><?php echo $pedido['borda_pizza']; ?></td>
-                        <td class="col-1"><?php echo $pedido['forma_pagamento']; ?></td>
+                        <td class="col-2"><?php echo $pedido['forma_pagamento']; ?></td>
                         <td class="col-1"><?php echo $pedido['troco']; ?></td>
                     </tr>
                 <?php endforeach; ?>
