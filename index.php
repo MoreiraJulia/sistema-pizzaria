@@ -21,7 +21,7 @@
         </div>
 
         
-        <form>
+        <form method="post">
             <fieldset>
                 <legend class="text-white">DADOS PARA ENTREGA</legend>
                 <div class="row">
@@ -128,47 +128,62 @@
                 </div>
         </form>
         
-        <div class="mt-5">
-            <table class="table text-center">
-                <thead class="table-success">
-                    <tr class="row justify-content-center">
-                        <th class="col-2">NOME</th>
-                        <th class="col-2">ENDEREÇO</th>
-                        <th class="col-1">CIDADE</th>
-                        <th class="col-1">ESTADO</th>
-                        <th class="col-1">TAMANHO</th>
-                        <th class="col-1">SABOR</th>
-                        <th class="col-1">BORDA</th>
-                        <th class="col-2">FORMA DE PAGAMENTO</th>
-                        <th class="col-1">TROCO</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php 
-                    $sqlBusca = "SELECT * FROM tbl_pedidos";
-                    $resultado = mysqli_query($conexao , $sqlBusca);
+        <div class="mt-5 card-group row-cols-md-3 d-flex justify-content-around align-item-center">
+            
+            <?php 
+                $sqlBusca = "SELECT * FROM tbl_pedidos";
+                $resultado = mysqli_query($conexao , $sqlBusca);
 
-                    $cadastroPedido = [];
+                $cadastroPedido = [];
 
-                    while($pedido= mysqli_fetch_assoc($resultado)){
-                        $cadastroPedido[] = $pedido;
-                    }
+                while($pedido= mysqli_fetch_assoc($resultado)){
+                    $cadastroPedido[] = $pedido;
+                }
 
-                    foreach($cadastroPedido as $pedido): ?>
-                        <tr class="row justify-content-center table-light">
-                            <td class="col-2"><?php echo $pedido['nome']; ?></td>
-                            <td class="col-2"><?php echo $pedido['endereco']; ?></td>
-                            <td class="col-1"><?php echo $pedido['cidade']; ?></td>
-                            <td class="col-1"><?php echo $pedido['estado']; ?></td>
-                            <td class="col-1"><?php echo $pedido['tamanho_pizza']; ?></td>
-                            <td class="col-1"><?php echo $pedido['sabor_pizza']; ?></td>
-                            <td class="col-1"><?php echo $pedido['borda_pizza']; ?></td>
-                            <td class="col-2"><?php echo $pedido['forma_pagamento']; ?></td>
-                            <td class="col-1"><?php echo $pedido['troco']; ?></td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
+                foreach($cadastroPedido as $pedido): ?>
+                       
+                <div class="card-group">
+                    <div class="card border-success mb-3" style="max-width: 23rem;">
+                        <div class="card-header text-white bg-success"><?php echo $pedido['nome']; ?></div>
+                        <div class="card-body text-dark">
+                            <div class="row">
+                                <h6 class="card-text col-md">Endereço:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['endereco']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Cidade:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['cidade']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Estado:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['estado']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Tamanho da pizza:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['tamanho_pizza']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Sabor:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['sabor_pizza']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Borda:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['borda_pizza']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Forma de pagamento:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['forma_pagamento']; ?></p>
+                            </div>
+                            <div class="row">
+                                <h6 class="card-text col-md">Troco:</h6>
+                                <p class="card-text col-md"><?php echo $pedido['troco']; ?></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <?php endforeach; ?>
+               
         </div>
 
     </main>

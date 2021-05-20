@@ -1,40 +1,40 @@
 <?php
 
-if(isset($_GET['nome']) && $_GET['nome'] != ''){
+if(isset($_POST['nome']) && $_POST['nome'] != ''){
     $pedido = [];
 
-    $pedido['nome'] = $_GET['nome'];
+    $pedido['nome'] = $_POST['nome'];
 
-    if(isset($_GET['endereco'])){
-        $pedido['endereco'] = $_GET['endereco'];
+    if(isset($_POST['endereco'])){
+        $pedido['endereco'] = $_POST['endereco'];
     }
 
-    if(isset($_GET['cidade'])){
-        $pedido['cidade'] = $_GET['cidade'];
+    if(isset($_POST['cidade'])){
+        $pedido['cidade'] = $_POST['cidade'];
     }
 
-    if(isset($_GET['estado'])){
-        $pedido['estado'] = $_GET['estado'];
+    if(isset($_POST['estado'])){
+        $pedido['estado'] = $_POST['estado'];
     }
 
-    if(isset($_GET['tamanho_pizza'])){
-        $pedido['tamanho_pizza'] = $_GET['tamanho_pizza'];
+    if(isset($_POST['tamanho_pizza'])){
+        $pedido['tamanho_pizza'] = $_POST['tamanho_pizza'];
     }
 
-    if(isset($_GET['sabor_pizza'])){
-        $pedido['sabor_pizza'] = $_GET['sabor_pizza'];
+    if(isset($_POST['sabor_pizza'])){
+        $pedido['sabor_pizza'] = $_POST['sabor_pizza'];
     }
 
-    if(isset($_GET['borda_pizza'])){
-        $pedido['borda_pizza'] = $_GET['borda_pizza'];
+    if(isset($_POST['borda_pizza'])){
+        $pedido['borda_pizza'] = $_POST['borda_pizza'];
     }
 
-    if(isset($_GET['forma_pagamento'])){
-        $pedido['forma_pagamento'] = $_GET['forma_pagamento'];
+    if(isset($_POST['forma_pagamento'])){
+        $pedido['forma_pagamento'] = $_POST['forma_pagamento'];
     }
 
-    if(isset($_GET['troco'])){
-        $pedido['troco'] = $_GET['troco'];
+    if(isset($_POST['troco'])){
+        $pedido['troco'] = $_POST['troco'];
     }
 }
 
